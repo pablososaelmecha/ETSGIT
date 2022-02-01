@@ -1,14 +1,21 @@
 import java.util.Scanner;
-public class Calculadora {
 
-
-        static float suma(int n1, int n2){  // F.suma
+public class calculadora {
+    static float suma(int n1, int n2){  // F.suma
             return n1 +n2;
         }
         static float resta (int n1,int n2){ 
             return n1 -n2;
         }
-
+        static float mult(int n1, int n2){
+            return n1*n2;
+        }
+        static float div(int n1, int n2){
+            if(n2==0){
+                return 0;
+            }else{
+            return n1/n2;}
+        }
 
         static void menu(){
             Scanner sc = new Scanner(System.in);
@@ -23,10 +30,14 @@ public class Calculadora {
             System.out.println(suma(n1,n2));
             System.out.println("Resta");
             System.out.println(resta(n1,n2));
+            System.out.println("Multi");
+            System.out.println(mult(n1,n2));
+            System.out.println("Division");
+            System.out.println(div(n1,n2));
 
             System.out.println("Version 2");
         }
         public static void main(String[] arg){    //llamamos el procedimiento menu
             menu();
         }
-    }
+}

@@ -24,7 +24,7 @@ public class Calculadora {
             System.out.println("Resta");
             System.out.println(resta(n1,n2));
 
-            
+            System.out.println("Version 2");
         }
         public static void main(String[] arg){    //llamamos el procedimiento menu
             menu();
